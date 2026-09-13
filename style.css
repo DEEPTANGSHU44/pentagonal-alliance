@@ -1,0 +1,689 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f4f1e8;
+    color: #172033;
+}
+
+header {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+header p {
+    letter-spacing: 3px;
+}
+
+main {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172033;
+    color: white;
+}
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    padding: 100px 20px;
+    border-bottom: 1px solid #c9b77d;
+}
+
+.hero h2 {
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+.motto {
+    margin-top: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.founder-card {
+    background: white;
+    width: 150px;
+    padding: 25px 15px;
+    border: 1px solid #c9b77d;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.founder-card .flag {
+    font-size: 45px;
+}
+
+.founder-card h3 {
+    margin-bottom: 5px;
+}
+
+.founder-card p {
+    margin: 5px;
+}
+
+.principle {
+    margin-top: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.declaration,
+.achievement {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border: 1px solid #c9b77d;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.declaration p,
+.achievement p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.achievement h3 {
+    letter-spacing: 2px;
+}
+.page-intro {
+    max-width: 900px;
+    margin: 70px auto 40px;
+    text-align: center;
+}
+
+.page-intro h2 {
+    letter-spacing: 2px;
+}
+
+.article {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 35px 45px;
+    background: white;
+    border-left: 5px solid #c9b77d;
+    box-shadow: 0 4px 12px #0002;
+    text-align: left;
+}
+
+.article h2 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.article p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.article li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 260px;
+    padding: 20px;
+
+    background: #f4f1e8;
+    border: 2px solid #c9b77d;
+
+    text-align: center;
+}
+
+.process-step strong {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.process-arrow {
+    font-size: 30px;
+    margin: 8px;
+}
+
+.final-step {
+    background: #172033;
+    color: white;
+}
+
+.article ol {
+    padding-left: 25px;
+}
+
+.article ol li {
+    margin: 18px 0;
+    line-height: 1.7;
+}
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f1e8;
+    color: #182536;
+    margin: 0;
+    line-height: 1.7;
+}
+
+header {
+    background: #10243e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px 20px;
+    border-bottom: 5px solid #c8a951;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin: 8px 0 22px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #e1c96f;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border: 1px solid #c8a951;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #c8a951;
+    color: #10243e;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+.page-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    background: white;
+    border-top: 4px solid #c8a951;
+    border-bottom: 1px solid #d6d0bd;
+}
+
+.page-intro h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.page-intro p {
+    font-size: 17px;
+}
+
+.article {
+    background: white;
+    margin: 30px 0;
+    padding: 30px 35px;
+    border-left: 5px solid #10243e;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.article h2 {
+    color: #10243e;
+    border-bottom: 1px solid #c8a951;
+    padding-bottom: 8px;
+}
+
+.article li {
+    margin: 8px 0;
+}
+
+.founders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.founder-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-top: 4px solid #c8a951;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-card .flag {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.founder-card h3 {
+    color: #10243e;
+    letter-spacing: 2px;
+}
+
+.principle {
+    text-align: center;
+    font-weight: bold;
+    color: #10243e;
+    letter-spacing: 2px;
+    padding: 15px;
+    border: 2px solid #c8a951;
+    background: #faf7ed;
+}
+
+.achievement {
+    background: white;
+    text-align: center;
+    margin: 35px 0;
+    padding: 40px;
+    border: 3px solid #c8a951;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement h3 {
+    color: #8a6d1d;
+    letter-spacing: 2px;
+}
+
+.achievement h2 {
+    color: #10243e;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.process {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    margin: 35px 0;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    flex: 1 1 200px;
+    padding: 25px;
+    background: white;
+    border-top: 4px solid #c8a951;
+    text-align: center;
+}
+
+.process-step strong {
+    display: block;
+    color: #10243e;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.process-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #c8a951;
+}
+
+.final-step {
+    background: #10243e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 30px 0;
+    border: 3px solid #c8a951;
+}
+
+.final-step strong {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+footer {
+    background: #10243e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 4px solid #c8a951;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .article {
+        padding: 22px;
+    }
+
+    .page-intro {
+        padding: 25px 20px;
+    }
+
+}
+.alliance-emblem {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+}
+
+.alliance-emblem svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.official-logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.official-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.footer-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    text-align: left;
+}
+
+.footer-brand h3 {
+    margin: 0 0 5px;
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: #e1c96f;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #e1c96f;
+}
+
+.footer-principle {
+    text-align: right;
+}
+
+.footer-principle p {
+    margin: 0;
+    color: #e1c96f;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #4a5870;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand,
+    .footer-principle {
+        text-align: center;
+    }
+
+}
+/* ================================
+   OFFICIAL EMBLEM DISPLAY
+   ================================ */
+
+.logo-display {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 60px 30px;
+    text-align: center;
+    background: #fffdf5;
+    border: 2px solid #c9a227;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.large-logo {
+    width: 420px;
+    height: 420px;
+    margin: 0 auto 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-display h2 {
+    margin-top: 10px;
+    color: #0b1f3a;
+    letter-spacing: 2px;
+}
+
+.logo-motto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #b08d19;
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+
+.logo-description {
+    max-width: 700px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+/* ================================
+   PENTAGONAL ALLIANCE AI SYSTEM
+   ================================ */
+
+.ai-panel {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    border: 2px solid #c9a227;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.ai-header {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #c9a227;
+}
+
+.ai-header h2 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.ai-header p {
+    margin: 8px 0 0;
+    color: #e5c65c;
+    letter-spacing: 1px;
+}
+
+.chat-window {
+    min-height: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 30px;
+    background: #f7f7f7;
+}
+
+.bot-message {
+    max-width: 75%;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    background: #fffdf5;
+    border-left: 5px solid #c9a227;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bot-message strong {
+    color: #0b1f3a;
+}
+
+.bot-message p {
+    margin-bottom: 0;
+}
+
+.user-message {
+    max-width: 75%;
+    margin: 20px 0 20px auto;
+    padding: 18px 22px;
+    background: #0b1f3a;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.chat-input-area input:focus {
+    border-color: #c9a227;
+}
+
+.chat-input-area button {
+    padding: 14px 25px;
+    background: #0b1f3a;
+    color: white;
+    border: 2px solid #c9a227;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.chat-input-area button:hover {
+    background: #142f55;
+}
