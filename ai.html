@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Pentagonal Alliance Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="official-logo">
+        <img src="C:\Users\Deeptangshu Goldar\Downloads\PENTAGONALALLIANCELOGO.png"
+             alt="Official Pentagonal Alliance Logo">
+    </div>
+
+    <h1>PENTAGONAL ALLIANCE</h1>
+
+    <p class="header-subtitle">
+        INTELLIGENCE & INFORMATION SYSTEM
+    </p>
+
+</header>
+
+
+<nav class="main-nav">
+
+    <a href="home.html">Home</a>
+    <a href="charter.html">Charter</a>
+    <a href="membership.html">Membership</a>
+    <a href="council.html">Council</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="projects.html">Projects</a>
+    <a href="documents.html">Documents</a>
+    <a href="logo.html">Emblem</a>
+    <a href="ai.html">AI Assistant</a>
+
+</nav>
+
+
+<main class="page-content">
+
+    <section class="page-intro">
+
+        <h2>🤖 PENTAGONAL ALLIANCE INTELLIGENCE</h2>
+
+        <p>
+            Welcome to the official digital intelligence system
+            of the Pentagonal Alliance.
+        </p>
+
+        <p>
+            Ask questions about the Alliance, its Charter,
+            Founding Council, Membership system, achievements,
+            projects and institutional principles.
+        </p>
+
+    </section>
+
+
+    <section class="ai-panel">
+
+        <div class="ai-header">
+            <h2>PA INTELLIGENCE</h2>
+            <p>Official Digital Assistant</p>
+        </div>
+
+
+        <div class="chat-window">
+
+            <div class="bot-message">
+
+                <strong>PA Intelligence:</strong>
+
+                <p>
+                    Welcome to the Pentagonal Alliance Intelligence
+                    System. How may I assist you?
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask about the Pentagonal Alliance..."
+            >
+
+            <button id="sendButton">
+                SEND
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="article">
+
+        <h2>ABOUT THE SYSTEM</h2>
+
+        <p>
+            PA Intelligence is designed to provide information
+            concerning the official materials of the Pentagonal
+            Alliance.
+        </p>
+
+        <p>
+            The Charter and decisions of the Founding Council remain
+            the ultimate institutional authorities of the Alliance.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+         Pentagonal Alliance — Five Nations, One Alliance.
+    </p>
+
+</footer>
+
+<script>
+
+const input = document.getElementById("userInput");
+const sendButton = document.getElementById("sendButton");
+const chatWindow = document.querySelector(".chat-window");
+
+function addUserMessage(text) {
+
+    const message = document.createElement("div");
+
+    message.className = "user-message";
+
+    message.textContent = text;
+
+    chatWindow.appendChild(message);
+
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+}
+
+
+function addBotMessage(text) {
+
+    const message = document.createElement("div");
+
+    message.className = "bot-message";
+
+    message.innerHTML = "<strong>PA Intelligence:</strong><p>" + text + "</p>";
+
+    chatWindow.appendChild(message);
+
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+}
+
+
+function getResponse(question) {
+
+    const q = question.toLowerCase();
+
+    /* =========================
+       BASIC INFORMATION
+       ========================= */
+
+    if (
+        q.includes("what is the pentagonal alliance") ||
+        q.includes("what is pentagonal alliance")
+    ) {
+        return "The Pentagonal Alliance is an alliance founded by five members: Debrudra, Anik, Avirup, Deeptangshu and Deep. It is based on unity, mutual respect, excellence, fair play, intellectual curiosity, loyalty and cooperation.";
+    }
+
+    if (
+        q.includes("founding member") ||
+        q.includes("founders") ||
+        q.includes("five founders")
+    ) {
+        return "The five Founding Members are: Debrudra — Spain, Anik — Italy, Avirup — United Kingdom, Deeptangshu — Deutschland, and Deep — France.";
+    }
+
+    if (q.includes("motto")) {
+        return "The official motto of the Pentagonal Alliance is: “FIVE NATIONS, ONE ALLIANCE.”";
+    }
+
+    if (
+        q.includes("first achievement") ||
+        q.includes("first victory") ||
+        q.includes("4-1") ||
+        q.includes("4–1")
+    ) {
+        return "The first recorded achievement of the Pentagonal Alliance was a football victory by a score of 4–1.";
+    }
+
+
+    /* =========================
+       FOUNDING COUNCIL
+       ========================= */
+
+    if (
+        q.includes("founding council") ||
+        q.includes("council")
+    ) {
+        return "The Founding Council consists of the five founders. All five members have equal standing and one vote each. The principle is: Five Members — One Council — Equal Voice.";
+    }
+
+    if (
+        q.includes("one vote") ||
+        q.includes("equal voice") ||
+        q.includes("equal standing")
+    ) {
+        return "Each Founding Council member has equal standing and one vote. No founder possesses permanent superior authority.";
+    }
+
+
+    /* =========================
+       CHARTER
+       ========================= */
+
+    if (q.includes("charter")) {
+        return "The Charter establishes the principles, objectives, governance, membership system, conduct, symbols, achievements and continuity of the Pentagonal Alliance.";
+    }
+
+    if (
+        q.includes("principles") ||
+        q.includes("values")
+    ) {
+        return "The Alliance is founded upon Unity, Mutual Respect, Excellence, Fair Play, Intellectual Curiosity, Loyalty and Responsibility.";
+    }
+
+    if (q.includes("objectives") || q.includes("goals")) {
+        return "The Alliance's objectives include sports and competition, academic and intellectual development, creative and cultural collaboration, science and technology, oratory and debate, arts and culture, strategy and games, and friendship and cooperation.";
+    }
+
+    if (
+        q.includes("dispute") ||
+        q.includes("argument") ||
+        q.includes("conflict")
+    ) {
+        return "Disagreements should be handled through private discussion and reasoned dialogue. Insults, threats, public humiliation and deliberate exclusion are prohibited. The principle is: Resolve the disagreement, preserve the friendship.";
+    }
+
+
+    /* =========================
+       MEMBERSHIP
+       ========================= */
+
+    if (q.includes("membership")) {
+        return "Membership is an exceptional privilege, not an entitlement. The process consists of Nomination, Scrutiny and Formal Decision. Final admission requires unanimous approval of all five Founding Council members.";
+    }
+
+    if (
+        q.includes("how to become a member") ||
+        q.includes("join the alliance") ||
+        q.includes("become a member")
+    ) {
+        return "A candidate cannot self-nominate. The process has three stages: Nomination, Scrutiny and Formal Decision. Final admission requires a 5/5 unanimous Founding Council decision.";
+    }
+
+    if (
+        q.includes("nomination") ||
+        q.includes("nominate")
+    ) {
+        return "Nomination requires exceptional merit and must satisfy standards including integrity, Alliance compatibility, multi-domain merit, reliability, independent merit, Charter compatibility, conflict management and long-term contribution.";
+    }
+
+    if (
+        q.includes("scrutiny") ||
+        q.includes("examination")
+    ) {
+        return "The Scrutiny Stage examines compatibility, consistency, integrity, sustainable contribution, conduct under pressure, collective responsibility, intellectual and creative contribution, diplomacy, confidentiality, leadership without dominance, adaptability and long-term value.";
+    }
+
+    if (
+        q.includes("unanimous") ||
+        q.includes("5/5") ||
+        q.includes("five out of five")
+    ) {
+        return "Final admission requires unanimous approval of all five Founding Council members. Any NO, abstention or failure to participate blocks admission.";
+    }
+
+    if (
+        q.includes("automatic membership") ||
+        q.includes("automatic admission")
+    ) {
+        return "There is no automatic membership. Friendship, popularity, talent, participation in activities or victories do not automatically create membership.";
+    }
+
+
+    /* =========================
+       AREAS OF COOPERATION
+       ========================= */
+
+    if (
+        q.includes("areas of cooperation") ||
+        q.includes("cooperation")
+    ) {
+        return "The Alliance cooperates in Sports, Cricket, Academics, Science & Technology, Oratory & Debate, Arts & Culture, and Strategy & Games.";
+    }
+
+    if (q.includes("sports")) {
+        return "Sports are one of the Alliance's official areas of cooperation. Competition is intended to promote improvement, fair play and teamwork.";
+    }
+
+    if (
+        q.includes("science") ||
+        q.includes("technology")
+    ) {
+        return "Science & Technology is an official area of Alliance cooperation, alongside academics, sports, debate, arts, culture and strategy.";
+    }
+
+
+    /* =========================
+       GOVERNANCE
+       ========================= */
+
+    if (q.includes("president") || q.includes("presidency")) {
+        return "The Presidency of the Council may be designated for a specified period. The Chairperson coordinates meetings, speaking order and implementation but has no superior authority.";
+    }
+
+    if (q.includes("secretariat")) {
+        return "The Secretariat maintains the Charter, amendments, minutes, decisions, competitions, projects and historical records.";
+    }
+
+    if (q.includes("summit") || q.includes("meeting")) {
+        return "Official Alliance meetings are called Alliance Summits. They may address important decisions, projects, disputes, new fields of cooperation or requests from members.";
+    }
+
+    if (q.includes("vote") || q.includes("voting")) {
+        return "The Council seeks consensus where possible. Ordinary decisions use a simple majority unless the Charter requires broader agreement. Fundamental identity and Charter matters require stronger agreement.";
+    }
+
+
+    /* =========================
+       PROJECTS & ACHIEVEMENTS
+       ========================= */
+
+    if (
+        q.includes("achievement") ||
+        q.includes("achievements")
+    ) {
+        return "Alliance achievements are formally recorded with their date, field, participants, result and significance. The first recorded achievement was the 4–1 football victory.";
+    }
+
+    if (
+        q.includes("project") ||
+        q.includes("projects")
+    ) {
+        return "Joint projects may be created in any field consistent with the Charter. A project should identify its purpose, participants, responsibilities, resources, timetable and expected outcome.";
+    }
+
+
+    /* =========================
+       SYMBOLS & IDENTITY
+       ========================= */
+
+    if (
+        q.includes("symbol") ||
+        q.includes("symbols") ||
+        q.includes("emblem") ||
+        q.includes("flag")
+    ) {
+        return "The Alliance may have official symbols including a flag, coat of arms or emblem, seal, anthem or ceremonial music, colours and insignia. Symbols require Council approval.";
+    }
+
+    if (q.includes("identity")) {
+        return "The five national identities are symbolic within the Alliance and do not represent political allegiance to governments or political parties.";
+    }
+
+
+    /* =========================
+       CONTINUITY
+       ========================= */
+
+    if (
+        q.includes("dissolved") ||
+        q.includes("dissolution") ||
+        q.includes("end the alliance")
+    ) {
+        return "The Alliance does not automatically dissolve simply because a project or event ends. Its continuation depends on the members' recognition of the Alliance and its foundational Charter.";
+    }
+
+    if (q.includes("annual review")) {
+        return "The Annual Review considers achievements, projects, difficulties, cooperation, future objectives and possible improvements or amendments.";
+    }
+
+
+    /* =========================
+       GREETINGS
+       ========================= */
+
+    if (
+        q.includes("hello") ||
+        q.includes("hi") ||
+        q.includes("greetings")
+    ) {
+        return "Greetings. Welcome to the Pentagonal Alliance Intelligence System. How may I assist you?";
+    }
+
+
+    /* =========================
+       DEFAULT RESPONSE
+       ========================= */
+
+    return "I do not currently have information on that specific question. I can provide information about the Pentagonal Alliance, its Charter, Founding Council, Membership, Motto, Governance, Cooperation, Projects, Achievements and Symbols.";
+}
+
+function sendMessage() {
+
+    const question = input.value.trim();
+
+    if (question === "") {
+        return;
+    }
+
+    addUserMessage(question);
+
+    const response = getResponse(question);
+
+    setTimeout(function() {
+        addBotMessage(response);
+    }, 400);
+
+    input.value = "";
+
+    input.focus();
+}
+
+
+sendButton.addEventListener("click", sendMessage);
+
+
+input.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+
+        sendMessage();
+
+    }
+
+});
+
+</script>
+</body>
+</html>
