@@ -192,7 +192,17 @@ function getResponse(question) {
         return `The official motto of the Pentagonal Alliance is: "${PA_KNOWLEDGE.identity.motto}"`;
     }
 
-    // FIRST ACHIEVEMENT
+    // FOOTBALL ACHIEVEMENTS
+if (
+    q.includes("football achievements") ||
+    q.includes("football victories") ||
+    q.includes("football wins") ||
+    q.includes("football matches won")
+) {
+    return "The recorded football victories of the Pentagonal Alliance are: " +
+        PA_KNOWLEDGE.achievements.footballVictories.join(" ");
+}
+// FIRST ACHIEVEMENT
     if (
         q.includes("first achievement") ||
         q.includes("first victory") ||

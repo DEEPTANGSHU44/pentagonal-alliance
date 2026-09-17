@@ -242,13 +242,14 @@ const PA_KNOWLEDGE = {
 
 
     achievements: {
+    first: "Football Victory — 4–1. This was the first recorded achievement of the Pentagonal Alliance.",
 
-        first:
-            "The first recorded achievement was a football victory by a score of 4–1.",
-
-        recording:
-            "Achievements are recorded with their date, field, participants, result and significance."
-    },
+    footballVictories: [
+        "Football Victory — 4–1 — First recorded achievement.",
+        "Football Victory — 7–2 — A recorded victory of the Pentagonal Alliance.",
+        "Football Victory — 3–2 — A recorded victory of the Pentagonal Alliance."
+    ]
+},
 
 
     projects: {
