@@ -14,13 +14,8 @@
     <style>
 
         /* =====================================================
-           PENTAGONAL ALLIANCE — OFFICIAL HOME PAGE
+           PENTAGONAL ALLIANCE — HOME PAGE
            ===================================================== */
-
-        .pa-home,
-        .pa-home * {
-            box-sizing: border-box;
-        }
 
         .pa-home {
             margin: 0;
@@ -30,181 +25,309 @@
             font-family: Georgia, "Times New Roman", serif;
         }
 
+        .pa-home *,
+        .pa-home *::before,
+        .pa-home *::after {
+            box-sizing: border-box;
+        }
+
+
         /* =====================================================
            HEADER
            ===================================================== */
 
         .pa-header {
-            background: linear-gradient(135deg, #06182d, #12395f, #06182d);
+            background: linear-gradient(
+                135deg,
+                #06182d,
+                #12395f,
+                #06182d
+            );
+
             color: white;
             text-align: center;
+
             padding: 30px 20px 0;
+
             border-bottom: 5px solid #c8a84e;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.20);
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.20);
         }
 
         .pa-header img {
             width: 90px;
             height: 90px;
+
             object-fit: contain;
+
             margin-bottom: 12px;
         }
 
         .pa-header h1 {
             margin: 0;
+
             font-size: 42px;
+
             letter-spacing: 6px;
         }
 
-        .pa-header .subtitle {
+        .pa-subtitle {
             margin: 12px 0 25px;
+
             color: #d8bc68;
-            font-size: 15px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 14px;
+
             letter-spacing: 4px;
+
             font-weight: bold;
         }
 
+
+        /* =====================================================
+           NAVIGATION
+           ===================================================== */
+
         .pa-nav {
             display: flex;
+
             justify-content: center;
+
+            align-items: center;
+
             flex-wrap: wrap;
+
             gap: 5px;
+
             padding-bottom: 15px;
         }
 
         .pa-nav a {
             color: white;
+
             text-decoration: none;
+
             padding: 10px 14px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
+
             border-radius: 4px;
-            transition: 0.2s;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 13px;
+
+            transition: 0.2s ease;
         }
 
         .pa-nav a:hover,
-        .pa-nav .active {
+        .pa-nav a.active {
             background: #c8a84e;
+
             color: #06182d;
         }
+
 
         /* =====================================================
            HERO
            ===================================================== */
 
         .pa-hero {
-            text-align: center;
             background:
-                radial-gradient(circle at center,
-                #1d4d7d 0%,
-                #0c2948 55%,
-                #06182d 100%);
+                radial-gradient(
+                    circle at center,
+                    #1d4d7d 0%,
+                    #0c2948 55%,
+                    #06182d 100%
+                );
+
             color: white;
+
+            text-align: center;
+
             padding: 75px 25px 85px;
+
             border-bottom: 2px solid #c8a84e;
         }
 
         .pa-hero img {
             width: 220px;
             max-width: 70%;
+
             margin-bottom: 30px;
-            filter: drop-shadow(0 12px 20px rgba(0,0,0,0.35));
+
+            filter:
+                drop-shadow(
+                    0 12px 20px rgba(0,0,0,0.35)
+                );
         }
 
         .pa-hero h2 {
             margin: 0;
+
             font-size: 48px;
+
             letter-spacing: 7px;
         }
 
-        .pa-hero .gold-line {
+        .pa-hero-line {
             width: 220px;
+
             height: 3px;
+
             background: #c8a84e;
+
             margin: 25px auto;
         }
 
-        .pa-hero .motto {
+        .pa-hero-motto {
             color: #d8bc68;
+
+            font-family: Arial, Helvetica, sans-serif;
+
             font-size: 18px;
+
             letter-spacing: 4px;
+
             font-weight: bold;
         }
 
-        .pa-hero p {
-            max-width: 750px;
+        .pa-hero-description {
+            max-width: 760px;
+
             margin: 25px auto 0;
-            line-height: 1.8;
+
             color: #e8edf4;
+
+            line-height: 1.8;
+
             font-size: 16px;
         }
 
+
         /* =====================================================
-           COMMON SECTION
+           GENERAL SECTIONS
            ===================================================== */
 
         .pa-section {
             max-width: 1200px;
-            margin: auto;
+
+            margin: 0 auto;
+
             padding: 75px 25px;
         }
 
-        .pa-title {
-            text-align: center;
-            color: #102f52;
-            font-size: 34px;
-            letter-spacing: 2px;
+        .pa-section-title {
             margin: 0;
+
+            text-align: center;
+
+            color: #102f52;
+
+            font-size: 34px;
+
+            letter-spacing: 2px;
         }
 
-        .pa-title-line {
+        .pa-section-line {
             width: 100px;
+
             height: 3px;
+
             background: #c8a84e;
+
             margin: 18px auto 25px;
         }
 
-        .pa-intro {
-            max-width: 800px;
-            margin: 0 auto 50px;
+        .pa-section-intro {
+            max-width: 820px;
+
+            margin: 0 auto 55px;
+
             text-align: center;
-            line-height: 1.85;
+
             color: #45596e;
+
+            line-height: 1.85;
+
+            font-size: 16px;
         }
+
 
         /* =====================================================
            FOUNDING COUNCIL
            ===================================================== */
 
-        .pa-founders-area {
+        .pa-founder-container {
             width: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 34px;
         }
+
 
         /*
-           TWO COMPLETELY SEPARATE ROWS.
-           This prevents cards from overlapping.
+           ROW ONE
+           Deeptangshu → Anik → Avirup
         */
 
-        .pa-founder-row {
-            display: flex;
-            justify-content: center;
-            align-items: stretch;
-            gap: 32px;
+        .pa-founder-row-one {
             width: 100%;
-            margin-bottom: 32px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: stretch;
+
+            gap: 32px;
         }
 
-        .pa-founder-row:last-child {
-            margin-bottom: 0;
+
+        /*
+           ROW TWO
+           Debrudra → Deep
+        */
+
+        .pa-founder-row-two {
+            width: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: stretch;
+
+            gap: 32px;
         }
 
-        /* LARGE CARDS */
+
+        /* =====================================================
+           LARGE FOUNDER CARDS
+           ===================================================== */
 
         .pa-founder-card {
-            width: 340px;
-            min-height: 390px;
+            width: 350px;
 
-            flex: 0 0 340px;
+            min-height: 410px;
+
+            flex: 0 0 350px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 42px 30px;
 
             background:
                 linear-gradient(
@@ -214,89 +337,94 @@
                 );
 
             border: 1px solid #c8a84e;
+
             border-top: 7px solid #c8a84e;
 
-            border-radius: 10px;
-
-            padding: 42px 30px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
+            border-radius: 11px;
 
             box-shadow:
-                0 10px 25px rgba(16,42,67,0.13);
+                0 12px 28px
+                rgba(16, 42, 67, 0.14);
 
             transition:
                 transform 0.25s ease,
                 box-shadow 0.25s ease;
-
         }
 
         .pa-founder-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-9px);
 
             box-shadow:
-                0 18px 35px rgba(16,42,67,0.20);
+                0 20px 38px
+                rgba(16, 42, 67, 0.22);
         }
 
-        /* FLAG */
 
-        .pa-founder-flag {
-            font-family:
-                "Segoe UI Emoji",
-                "Apple Color Emoji",
-                sans-serif;
+        /* =====================================================
+           FLAGS
 
-            font-size: 72px;
+           IMPORTANT:
+           Uses the same .flag class structure as index.html.
+           No custom emoji font is imposed here.
+           ===================================================== */
+
+        .pa-founder-card .flag {
+            font-size: 76px;
 
             line-height: 1;
 
-            margin-bottom: 28px;
+            margin-bottom: 30px;
 
             display: block;
         }
 
-        /* NAME */
+
+        /* =====================================================
+           FOUNDER NAME
+           ===================================================== */
 
         .pa-founder-card h3 {
-            margin: 0 0 15px;
+            margin: 0 0 16px;
 
             color: #102f52;
 
-            font-size: 27px;
+            font-size: 28px;
 
             letter-spacing: 2px;
 
             text-transform: uppercase;
         }
 
-        /* COUNTRY */
+
+        /* =====================================================
+           COUNTRY
+           ===================================================== */
 
         .pa-founder-country {
-            margin: 0 0 22px;
+            margin: 0 0 25px;
 
             color: #43576c;
 
-            font-size: 18px;
+            font-size: 19px;
 
             font-weight: bold;
         }
 
-        /* POSITION */
+
+        /* =====================================================
+           POSITION
+           ===================================================== */
 
         .pa-founder-position {
             margin: 0;
 
-            padding: 10px 22px;
-
-            border-top: 2px solid #c8a84e;
-            border-bottom: 2px solid #c8a84e;
+            padding: 10px 24px;
 
             color: #80631b;
+
+            border-top: 2px solid #c8a84e;
+
+            border-bottom: 2px solid #c8a84e;
 
             font-family:
                 Arial,
@@ -312,61 +440,88 @@
             text-transform: uppercase;
         }
 
+
         /* =====================================================
            EXECUTIVE AUTHORITY
            ===================================================== */
 
         .pa-executive {
-            background: #102f52;
+            background:
+                linear-gradient(
+                    135deg,
+                    #0a2139,
+                    #102f52,
+                    #0a2139
+                );
+
             color: white;
+
             border-top: 4px solid #c8a84e;
+
             border-bottom: 4px solid #c8a84e;
         }
 
-        .pa-executive .pa-title {
+        .pa-executive .pa-section-title {
             color: white;
         }
 
         .pa-executive-grid {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            max-width: 1050px;
+            max-width: 1100px;
+
             margin: 45px auto 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 30px;
         }
 
         .pa-executive-card {
-            width: 310px;
-            min-height: 220px;
+            width: 320px;
 
-            padding: 30px 25px;
+            min-height: 235px;
+
+            padding: 32px 25px;
 
             text-align: center;
 
+            background:
+                rgba(255,255,255,0.06);
+
             border: 1px solid #c8a84e;
 
-            border-radius: 8px;
-
-            background: rgba(255,255,255,0.06);
+            border-radius: 9px;
         }
 
         .pa-executive-card .icon {
-            font-size: 40px;
-            margin-bottom: 15px;
+            font-size: 42px;
+
+            line-height: 1;
+
+            margin-bottom: 18px;
         }
 
         .pa-executive-card h3 {
+            margin: 0 0 13px;
+
             color: #d8bc68;
-            margin: 0 0 12px;
-            font-size: 19px;
+
+            font-size: 18px;
+
+            letter-spacing: 1px;
         }
 
         .pa-executive-card p {
             margin: 0;
-            line-height: 1.7;
+
             color: #e5ebf2;
+
+            line-height: 1.7;
+
             font-size: 14px;
         }
+
 
         /* =====================================================
            ABOUT
@@ -374,75 +529,107 @@
 
         .pa-about-box {
             max-width: 900px;
-            margin: auto;
+
+            margin: 0 auto;
+
+            padding: 45px;
 
             background: white;
 
             border-left: 6px solid #c8a84e;
+
             border-right: 6px solid #c8a84e;
 
-            padding: 42px;
-
             box-shadow:
-                0 8px 25px rgba(16,42,67,0.10);
+                0 8px 25px
+                rgba(16,42,67,0.10);
         }
 
         .pa-about-box p {
             margin: 0 0 20px;
-            line-height: 1.9;
+
             color: #43576c;
+
+            line-height: 1.9;
+
+            font-size: 16px;
         }
 
         .pa-about-box p:last-child {
             margin-bottom: 0;
         }
 
+
         /* =====================================================
            PRINCIPLES
            ===================================================== */
 
         .pa-principles {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
             gap: 25px;
-            max-width: 1050px;
-            margin: auto;
         }
 
         .pa-principle {
-            background: white;
-            border: 1px solid #d3bd76;
-            border-radius: 8px;
+            min-height: 190px;
+
             padding: 30px 22px;
+
+            background: white;
+
+            border: 1px solid #d3bd76;
+
+            border-radius: 9px;
+
             text-align: center;
-            box-shadow: 0 7px 20px rgba(16,42,67,0.08);
+
+            box-shadow:
+                0 7px 20px
+                rgba(16,42,67,0.08);
         }
 
         .pa-principle .icon {
             font-size: 38px;
+
             margin-bottom: 12px;
         }
 
         .pa-principle h3 {
             margin: 0 0 10px;
+
             color: #102f52;
+
             font-size: 18px;
         }
 
         .pa-principle p {
             margin: 0;
+
             color: #526477;
+
             line-height: 1.65;
+
             font-size: 14px;
         }
 
+
         /* =====================================================
-           ACHIEVEMENT
+           FIRST ACHIEVEMENT
            ===================================================== */
 
         .pa-achievement {
-            max-width: 900px;
-            margin: auto;
+            max-width: 920px;
+
+            margin: 0 auto;
+
+            padding: 52px 35px;
 
             background:
                 linear-gradient(
@@ -455,85 +642,128 @@
 
             text-align: center;
 
-            padding: 50px 30px;
-
             border-top: 6px solid #c8a84e;
+
             border-bottom: 6px solid #c8a84e;
 
             box-shadow:
-                0 12px 28px rgba(16,42,67,0.15);
+                0 12px 28px
+                rgba(16,42,67,0.15);
         }
 
         .pa-achievement-label {
             color: #d8bc68;
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             font-size: 13px;
+
             letter-spacing: 3px;
+
             font-weight: bold;
         }
 
         .pa-achievement h2 {
             margin: 16px 0;
+
             font-size: 32px;
         }
 
         .pa-achievement p {
-            max-width: 700px;
+            max-width: 720px;
+
             margin: 10px auto;
-            line-height: 1.8;
+
             color: #edf2f7;
+
+            line-height: 1.8;
         }
+
 
         /* =====================================================
            FINAL MOTTO
            ===================================================== */
 
         .pa-final {
-            background: #06182d;
-            color: white;
-            text-align: center;
             padding: 70px 20px;
+
+            background: #06182d;
+
+            color: white;
+
+            text-align: center;
+
             border-top: 2px solid #c8a84e;
         }
 
         .pa-final h2 {
             margin: 0;
+
             color: #d8bc68;
+
             font-size: 31px;
+
             letter-spacing: 5px;
         }
 
         .pa-final p {
             margin-top: 18px;
+
             color: #dce5ed;
-            letter-spacing: 2px;
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             font-size: 13px;
+
+            letter-spacing: 2px;
         }
+
 
         /* =====================================================
            FOOTER
            ===================================================== */
 
         .pa-footer {
+            padding: 32px 20px;
+
             background: #031020;
+
             color: #ccd6e0;
+
             text-align: center;
-            padding: 30px 20px;
-            font-family: Arial, Helvetica, sans-serif;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
         }
 
         .pa-footer h3 {
             margin: 0 0 15px;
+
             color: white;
-            font-family: Georgia, "Times New Roman", serif;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
             letter-spacing: 2px;
         }
 
         .pa-footer a {
             color: #d8bc68;
+
             text-decoration: none;
+
             margin: 0 7px;
+
             font-size: 13px;
         }
 
@@ -543,75 +773,87 @@
 
         .pa-footer-bottom {
             margin-top: 18px;
+
             padding-top: 15px;
-            border-top: 1px solid rgba(255,255,255,0.12);
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.12);
+
             font-size: 12px;
         }
+
 
         /* =====================================================
            TABLET
            ===================================================== */
 
-        @media (max-width: 1050px) {
+        @media (max-width: 1150px) {
 
             .pa-founder-card {
-                width: 300px;
-                flex-basis: 300px;
+                width: 310px;
+
+                flex-basis: 310px;
             }
 
-            .pa-founder-row {
+            .pa-founder-row-one,
+            .pa-founder-row-two {
                 gap: 22px;
             }
 
-            .pa-executive-grid {
-                flex-wrap: wrap;
-            }
         }
+
 
         /* =====================================================
            MOBILE
            ===================================================== */
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
 
             .pa-header h1 {
-                font-size: 28px;
+                font-size: 29px;
+
                 letter-spacing: 3px;
             }
 
-            .pa-header .subtitle {
-                font-size: 12px;
+            .pa-subtitle {
+                font-size: 11px;
+
                 letter-spacing: 2px;
             }
 
             .pa-hero {
-                padding: 50px 18px 60px;
-            }
-
-            .pa-hero h2 {
-                font-size: 30px;
-                letter-spacing: 3px;
+                padding:
+                    50px
+                    18px
+                    60px;
             }
 
             .pa-hero img {
                 width: 165px;
             }
 
-            .pa-section {
-                padding: 55px 18px;
+            .pa-hero h2 {
+                font-size: 31px;
+
+                letter-spacing: 3px;
             }
 
-            .pa-founder-row {
+            .pa-founder-row-one,
+            .pa-founder-row-two {
                 flex-direction: column;
+
                 align-items: center;
+
                 gap: 25px;
-                margin-bottom: 25px;
             }
 
             .pa-founder-card {
                 width: min(390px, 100%);
+
                 flex-basis: auto;
-                min-height: 360px;
+
+                min-height: 390px;
             }
 
             .pa-principles {
@@ -620,6 +862,7 @@
 
             .pa-executive-grid {
                 flex-direction: column;
+
                 align-items: center;
             }
 
@@ -628,13 +871,15 @@
             }
 
             .pa-about-box {
-                padding: 28px 22px;
+                padding: 30px 22px;
             }
 
             .pa-final h2 {
-                font-size: 22px;
+                font-size: 23px;
+
                 letter-spacing: 3px;
             }
+
         }
 
     </style>
@@ -660,30 +905,48 @@
         PENTAGONAL ALLIANCE
     </h1>
 
-    <div class="subtitle">
+    <div class="pa-subtitle">
         FIVE NATIONS, ONE ALLIANCE
     </div>
 
 
     <nav class="pa-nav">
 
-        <a href="home.html" class="active">HOME</a>
+        <a href="home.html" class="active">
+            HOME
+        </a>
 
-        <a href="charter.html">CHARTER</a>
+        <a href="charter.html">
+            CHARTER
+        </a>
 
-        <a href="membership.html">MEMBERSHIP</a>
+        <a href="membership.html">
+            MEMBERSHIP
+        </a>
 
-        <a href="council.html">COUNCIL</a>
+        <a href="council.html">
+            COUNCIL
+        </a>
 
-        <a href="achievements.html">ACHIEVEMENTS</a>
+        <a href="achievements.html">
+            ACHIEVEMENTS
+        </a>
 
-        <a href="projects.html">PROJECTS</a>
+        <a href="projects.html">
+            PROJECTS
+        </a>
 
-        <a href="documents.html">DOCUMENTS</a>
+        <a href="documents.html">
+            DOCUMENTS
+        </a>
 
-        <a href="ai.html">AI ASSISTANT</a>
+        <a href="ai.html">
+            AI ASSISTANT
+        </a>
 
-        <a href="logo.html">EMBLEM</a>
+        <a href="logo.html">
+            EMBLEM
+        </a>
 
     </nav>
 
@@ -706,13 +969,13 @@
         PENTAGONAL ALLIANCE
     </h2>
 
-    <div class="gold-line"></div>
+    <div class="pa-hero-line"></div>
 
-    <div class="motto">
+    <div class="pa-hero-motto">
         FIVE NATIONS, ONE ALLIANCE
     </div>
 
-    <p>
+    <p class="pa-hero-description">
 
         Five founding members united through friendship,
         cooperation, competition, intellectual curiosity,
@@ -733,13 +996,13 @@
 
 <section class="pa-section">
 
-    <h2 class="pa-title">
+    <h2 class="pa-section-title">
         WELCOME
     </h2>
 
-    <div class="pa-title-line"></div>
+    <div class="pa-section-line"></div>
 
-    <p class="pa-intro">
+    <p class="pa-section-intro">
 
         The Pentagonal Alliance is a five-member association
         founded upon unity, mutual respect, excellence,
@@ -760,13 +1023,13 @@
 
 <section class="pa-section">
 
-    <h2 class="pa-title">
+    <h2 class="pa-section-title">
         FOUNDING COUNCIL
     </h2>
 
-    <div class="pa-title-line"></div>
+    <div class="pa-section-line"></div>
 
-    <p class="pa-intro">
+    <p class="pa-section-intro">
 
         The five Founding Members constitute the historical
         foundation of the Pentagonal Alliance.
@@ -777,21 +1040,21 @@
     </p>
 
 
-    <div class="pa-founders-area">
+    <div class="pa-founder-container">
 
 
-        <!-- =========================
+        <!-- =================================================
              ROW ONE
-             ========================= -->
+             ================================================= -->
 
-        <div class="pa-founder-row">
+        <div class="pa-founder-row-one">
 
 
             <!-- DEEPTANGSHU -->
 
             <div class="pa-founder-card">
 
-                <div class="pa-founder-flag">
+                <div class="flag">
                     🇩🇪
                 </div>
 
@@ -815,7 +1078,7 @@
 
             <div class="pa-founder-card">
 
-                <div class="pa-founder-flag">
+                <div class="flag">
                     🇮🇹
                 </div>
 
@@ -839,7 +1102,7 @@
 
             <div class="pa-founder-card">
 
-                <div class="pa-founder-flag">
+                <div class="flag">
                     🇬🇧
                 </div>
 
@@ -861,18 +1124,18 @@
 
 
 
-        <!-- =========================
+        <!-- =================================================
              ROW TWO
-             ========================= -->
+             ================================================= -->
 
-        <div class="pa-founder-row">
+        <div class="pa-founder-row-two">
 
 
             <!-- DEBRUDRA -->
 
             <div class="pa-founder-card">
 
-                <div class="pa-founder-flag">
+                <div class="flag">
                     🇪🇸
                 </div>
 
@@ -896,7 +1159,7 @@
 
             <div class="pa-founder-card">
 
-                <div class="pa-founder-flag">
+                <div class="flag">
                     🇫🇷
                 </div>
 
@@ -930,15 +1193,17 @@
 
     <div class="pa-section">
 
-        <h2 class="pa-title">
+        <h2 class="pa-section-title">
             EXECUTIVE AUTHORITY
         </h2>
 
-        <div class="pa-title-line"></div>
+        <div class="pa-section-line"></div>
 
 
         <div class="pa-executive-grid">
 
+
+            <!-- DEEPTANGSHU -->
 
             <div class="pa-executive-card">
 
@@ -958,6 +1223,8 @@
 
 
 
+            <!-- ANIK -->
+
             <div class="pa-executive-card">
 
                 <div class="icon">
@@ -975,6 +1242,8 @@
             </div>
 
 
+
+            <!-- AVIRUP -->
 
             <div class="pa-executive-card">
 
@@ -1003,16 +1272,16 @@
 
 
 <!-- =====================================================
-     ABOUT
+     ABOUT THE ALLIANCE
      ===================================================== -->
 
 <section class="pa-section">
 
-    <h2 class="pa-title">
+    <h2 class="pa-section-title">
         ABOUT THE ALLIANCE
     </h2>
 
-    <div class="pa-title-line"></div>
+    <div class="pa-section-line"></div>
 
 
     <div class="pa-about-box">
@@ -1063,11 +1332,11 @@
 
 <section class="pa-section">
 
-    <h2 class="pa-title">
+    <h2 class="pa-section-title">
         OUR PRINCIPLES
     </h2>
 
-    <div class="pa-title-line"></div>
+    <div class="pa-section-line"></div>
 
 
     <div class="pa-principles">
@@ -1075,9 +1344,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">🤝</div>
+            <div class="icon">
+                🤝
+            </div>
 
-            <h3>UNITY</h3>
+            <h3>
+                UNITY
+            </h3>
 
             <p>
                 Five members working together as one Alliance.
@@ -1088,9 +1361,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">⚖️</div>
+            <div class="icon">
+                ⚖️
+            </div>
 
-            <h3>FAIR PLAY</h3>
+            <h3>
+                FAIR PLAY
+            </h3>
 
             <p>
                 Competition conducted with fairness,
@@ -1102,9 +1379,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">🏆</div>
+            <div class="icon">
+                🏆
+            </div>
 
-            <h3>EXCELLENCE</h3>
+            <h3>
+                EXCELLENCE
+            </h3>
 
             <p>
                 Striving for improvement and achievement
@@ -1116,9 +1397,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">🔬</div>
+            <div class="icon">
+                🔬
+            </div>
 
-            <h3>INTELLECTUAL CURIOSITY</h3>
+            <h3>
+                INTELLECTUAL CURIOSITY
+            </h3>
 
             <p>
                 Encouraging learning, discovery and
@@ -1130,9 +1415,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">🛡️</div>
+            <div class="icon">
+                🛡️
+            </div>
 
-            <h3>LOYALTY</h3>
+            <h3>
+                LOYALTY
+            </h3>
 
             <p>
                 Maintaining trust and responsibility
@@ -1144,9 +1433,13 @@
 
         <div class="pa-principle">
 
-            <div class="icon">🌐</div>
+            <div class="icon">
+                🌐
+            </div>
 
-            <h3>COOPERATION</h3>
+            <h3>
+                COOPERATION
+            </h3>
 
             <p>
                 Building projects, friendships and
@@ -1163,7 +1456,7 @@
 
 
 <!-- =====================================================
-     FIRST ACHIEVEMENT
+     FIRST RECORDED ACHIEVEMENT
      ===================================================== -->
 
 <section class="pa-section">
@@ -1232,15 +1525,41 @@
 
     <div>
 
-        <a href="home.html">Home</a>
-        <a href="charter.html">Charter</a>
-        <a href="membership.html">Membership</a>
-        <a href="council.html">Council</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="projects.html">Projects</a>
-        <a href="documents.html">Documents</a>
-        <a href="ai.html">AI Assistant</a>
-        <a href="logo.html">Emblem</a>
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="charter.html">
+            Charter
+        </a>
+
+        <a href="membership.html">
+            Membership
+        </a>
+
+        <a href="council.html">
+            Council
+        </a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+        <a href="projects.html">
+            Projects
+        </a>
+
+        <a href="documents.html">
+            Documents
+        </a>
+
+        <a href="ai.html">
+            AI Assistant
+        </a>
+
+        <a href="logo.html">
+            Emblem
+        </a>
 
     </div>
 
