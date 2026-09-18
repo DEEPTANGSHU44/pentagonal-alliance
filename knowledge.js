@@ -60,8 +60,8 @@ const PA_KNOWLEDGE = {
         articleIII:
             "The objectives include sports, academics, creative and cultural collaboration, science and technology, debate, arts and culture, strategy and games, friendship and cooperation.",
 
-        articleIV:
-            "The Founding Council consists of the five founders. All founders have equal standing. No founder possesses permanent superior authority. The principle is: Five Members — One Council — Equal Voice.",
+        articleIV: 
+            "Article IV — Executive Authority. The Pentagonal Alliance shall be headed by two Presidents: Deeptangshu Goldar — President; Anik Jana — President. The Presidents shall constitute the highest executive authority of the Pentagonal Alliance. Routine executive matters may be decided by either President individually. Major decisions affecting the fundamental structure, membership, identity, Charter, or long-term direction of the Alliance shall require the agreement of both Presidents. Two Presidents — One Executive Authority — One Alliance.",
 
         articleV:
             "The Council seeks consensus where possible. Ordinary decisions may be decided by simple majority unless the Charter requires broader agreement. Each member has one vote.",
